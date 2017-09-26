@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Paseo Demo Plugin
- * Plugin URI:        https://github.com/catenare/paseo-wp-form-api
+ * Plugin URI:        https://github.com/catenare/paseo-demo-plugin
  * Description:       Demo plugin using php namespacing and autoloading
  * Version:           0.0.1
  * Author:            Johan Martin
