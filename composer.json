@@ -1,6 +1,6 @@
 {
     "name": "paseo/paseo-demo-plugin",
-    "description": "Demo Plugin using PHP namespace",
+    "description": "Demo Plugin with autoloading of classes",
     "type": "wordpress-plugin",
     "license": "MIT",
     "authors": [
