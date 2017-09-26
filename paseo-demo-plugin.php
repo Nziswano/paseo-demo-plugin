@@ -43,13 +43,14 @@ if (version_compare($wp_version, "4.7", "<")){
 	exit( $exit_message );
 }
 
+define( 'PASEO_DEMO_PLUGIN_VERSION', '0.0.1' );
+
 require __DIR__ . DIRECTORY_SEPARATOR. 'vendor/autoload.php';
 
-define( 'PLUGIN_VERSION', '0.0.1' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-paseo-wp-form-api-activator.php
+ * This action is documented in src/Lib/Activator.php
  */
 function activate_paseo_demo_plugin() {
 	Demo\Lib\Activator::activate();
@@ -57,7 +58,7 @@ function activate_paseo_demo_plugin() {
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-paseo-wp-form-api-deactivator.php
+ * This action is documented in src/Lib/Deactivator.php
  */
 function deactivate_paseo_demo_plugin() {
 	Demo\Lib\Deactivator::deactivate();
