@@ -1,6 +1,6 @@
 <?php
 
-namespace Paseo\Lib;
+namespace Demo\Lib;
 
 /**
  * Define the internationalization functionality.
@@ -9,8 +9,7 @@ namespace Paseo\Lib;
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Paseo_Wp_Form_Api
- * @subpackage Paseo_Wp_Form_Api/includes
+ * @package    Paseo_Demo_Plugin
  * @author     Johan Martin <johan@paseo.org.za>
  */
 class i18n {
@@ -24,13 +23,9 @@ class i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'paseo-wp-form-api',
+			'paseo-demo-plugin',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
-
 	}
-
-
-
 }

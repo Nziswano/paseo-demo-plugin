@@ -52,7 +52,7 @@ define( 'PLUGIN_VERSION', '0.0.1' );
  * This action is documented in includes/class-paseo-wp-form-api-activator.php
  */
 function activate_paseo_wp_form_api() {
-	Paseo\Activator::activate();
+	Demo\Lib\Activator::activate();
 }
 
 /**
@@ -60,7 +60,7 @@ function activate_paseo_wp_form_api() {
  * This action is documented in includes/class-paseo-wp-form-api-deactivator.php
  */
 function deactivate_paseo_wp_form_api() {
-	Paseo\Deactivator::deactivate();
+	Demo\Lib\Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_paseo_wp_form_api' );

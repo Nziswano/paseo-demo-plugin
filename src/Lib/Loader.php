@@ -1,5 +1,5 @@
 <?php
-namespace Paseo\Lib;
+namespace Demo\Lib;
 
 /**
  * Register all actions and filters for the plugin.
@@ -9,7 +9,6 @@ namespace Paseo\Lib;
  * run function to execute the list of actions and filters.
  *
  * @package    Paseo_Demo_Plugin
- * @subpackage Paseo_Wp_Form_Api/includes
  * @author     Johan Martin <johan@paseo.org.za>
  */
 class Loader {
