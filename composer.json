@@ -1,0 +1,20 @@
+{
+    "name": "paseo/paseo-demo-plugin",
+    "description": "Demo Plugin using PHP namespace",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan Martin",
+            "email": "johan@paseo.org.za"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src/"
+        }
+    }
+}
