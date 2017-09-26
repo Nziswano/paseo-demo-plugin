@@ -51,7 +51,7 @@ define( 'PLUGIN_VERSION', '0.0.1' );
  * The code that runs during plugin activation.
  * This action is documented in includes/class-paseo-wp-form-api-activator.php
  */
-function activate_paseo_wp_form_api() {
+function activate_paseo_demo_plugin() {
 	Demo\Lib\Activator::activate();
 }
 
@@ -59,12 +59,12 @@ function activate_paseo_wp_form_api() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-paseo-wp-form-api-deactivator.php
  */
-function deactivate_paseo_wp_form_api() {
+function deactivate_paseo_demo_plugin() {
 	Demo\Lib\Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_paseo_wp_form_api' );
-register_deactivation_hook( __FILE__, 'deactivate_paseo_wp_form_api' );
+register_activation_hook( __FILE__, 'activate_paseo_demo_plugin' );
+register_deactivation_hook( __FILE__, 'deactivate_paseo_demo_plugin' );
 
 /**
  * Begins execution of the plugin.
