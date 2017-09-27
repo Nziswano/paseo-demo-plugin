@@ -23,4 +23,11 @@ class Activator {
 	public static function activate() {
 	}
 
+	/**
+	 * Deactivate the plugin
+	 */
+	public static function deactivate() {
+		
+	}
+
 }

@@ -59,7 +59,7 @@ require __DIR__ . DIRECTORY_SEPARATOR. 'vendor/autoload.php';
  * The code that runs during plugin deactivation.
  * This action is documented in src/Lib/Deactivator.php
  */
- register_deactivation_hook( __FILE__, array('Demo\Lib\Deactivator', 'deactivate') );
+ register_deactivation_hook( __FILE__, array('Demo\Lib\Activator', 'deactivate') );
 
 
 
@@ -72,10 +72,5 @@ require __DIR__ . DIRECTORY_SEPARATOR. 'vendor/autoload.php';
  *
  * @since    1.0.0
  */
-function run_plugin() {
-
-	$plugin = new Demo\Main();
-	$plugin->run();
-
-}
-run_plugin();
+$plugin = new Demo\Main();
+$plugin->run();
