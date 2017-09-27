@@ -65,7 +65,7 @@ class Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'site/admin/css/paseo-demo-plugin-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'site/admin/css/'.PASEO_DEMO_PLUGIN_NAME.'-admin.css', array(), $this->version, 'all' );
 
 	}
 
@@ -88,7 +88,7 @@ class Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'site/admin/js/paseo-demo-plugin-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'site/admin/js/'.PASEO_DEMO_PLUGIN_NAME.'-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 

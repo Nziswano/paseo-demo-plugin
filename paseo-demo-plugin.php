@@ -44,6 +44,7 @@ if (version_compare($wp_version, "4.7", "<")){
 }
 
 define( 'PASEO_DEMO_PLUGIN_VERSION', '0.0.1' );
+define(	'PASEO_DEMO_PLUGIN_NAME', 'paseo_demo_plugin');
 
 require __DIR__ . DIRECTORY_SEPARATOR. 'vendor/autoload.php';
 
@@ -52,20 +53,15 @@ require __DIR__ . DIRECTORY_SEPARATOR. 'vendor/autoload.php';
  * The code that runs during plugin activation.
  * This action is documented in src/Lib/Activator.php
  */
-function activate_paseo_demo_plugin() {
-	Demo\Lib\Activator::activate();
-}
+ register_activation_hook( __FILE__, array('Demo\Lib\Activator', 'activate') );
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in src/Lib/Deactivator.php
  */
-function deactivate_paseo_demo_plugin() {
-	Demo\Lib\Deactivator::deactivate();
-}
+ register_deactivation_hook( __FILE__, array('Demo\Lib\Deactivator', 'deactivate') );
 
-register_activation_hook( __FILE__, 'activate_paseo_demo_plugin' );
-register_deactivation_hook( __FILE__, 'deactivate_paseo_demo_plugin' );
+
 
 /**
  * Begins execution of the plugin.
